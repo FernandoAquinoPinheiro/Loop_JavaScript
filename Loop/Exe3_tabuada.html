@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Tabuada</h1>
+<div id="numeros"></div>
+
+<body>
+    <script>
+        let numero= Number(prompt("Bem vindo a Tabuada.\nDigite um numero para que possamos multiplicarmos de 0 à 10 "));
+        let tabuada = "";
+
+            
+            for (let multiplicador = 0; multiplicador <= 10; multiplicador++){ 
+                let resultado = numero * multiplicador;
+                tabuada += numero + " x " + multiplicador + " = " + resultado + "<br>";
+                } document.getElementById("numeros").innerHTML = tabuada;
+            
+            
+
+                    
+            
+    </script>
+    
+</body>
+</html>

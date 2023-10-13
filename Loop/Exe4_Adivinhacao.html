@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de adivinhação</title>
+</head>
+<body>
+    <h1>Jogo de adivinhação</h1>
+    <div id="jogo"></div>
+    <script>
+        let n1 = Number(prompt("Bem Vindo ao jogo de Adivinhação.\nJogador 1, digite um número de 1 a 10 para o jogador 2 adivinhar:"));
+        let n2 = Number(prompt("Jogador 2, tente adivinhar o número que o jogador 1 digitou:"));
+        let tentativas = 1; 
+        
+        while (n1 !== n2) {
+            if (n2 > n1) {
+                alert("Tente um número menor.");
+            } else {
+                alert("Tente um número maior.");
+            }
+            n2 = Number(prompt("Tente adivinhar o número que o jogador 1 digitou:"));
+            tentativas++; 
+            
+        }
+
+        
+
+        document.getElementById("jogo").innerHTML ='jogador 2, você acertou o número '+n1+' em '+tentativas+' tentativas!';
+    </script>
+</body>
+</html>
