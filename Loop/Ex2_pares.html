@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<h1>Numeros Pares de 1 à 100</h1>
-<div id="numeros"></div>
 
 <body>
+    <h1>Numeros Pares de 1 à 100</h1>
+    <div id="numeros"></div>
     <script>
-            for (let a = 100; a >= 2; a--) {
-            if (a % 2 === 0) {
-                document.getElementById("numeros").innerHTML += a + "<br>";
+            for (let a = 100; a >= 2; a--)
+            {
+                if (a % 2 === 0) 
+                {
+                    document.getElementById("numeros").innerHTML += a + "<br>";
+                }
             }
-        }
     </script>
     
 </body>
